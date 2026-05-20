@@ -1,11 +1,180 @@
-<h1>Street Girls' Aid</h1>
-<p>Stephie’s $40 for 40 will support in-kind donations based on their current needs.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Street Girls Aid | Stephie’s $40 for 40</title>
 
-<h2>Items we hope to purchase:</h2>
-<ul>
-  <li>Deep Freezer</li>
-  <li>Sewing Machine</li>
-  <li>Wooden Children's Table for the Daycare</li>
-</ul>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<a href="index.html">← Back to Stephie’s $40 for 40</a>
+  <style>
+    :root {
+      --cream: #fbfaf7;
+      --white: #ffffff;
+      --black: #090909;
+      --gray: #7c756b;
+      --gold: #b98a24;
+      --gold-soft: #eadfc9;
+      --serif: 'Bodoni Moda', Georgia, serif;
+      --sans: 'Inter', system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(185, 138, 36, 0.08), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(185, 138, 36, 0.06), transparent 28%),
+        var(--cream);
+      color: var(--black);
+      font-family: var(--sans);
+      line-height: 1.7;
+      padding: 2rem;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--gold-soft);
+      padding: clamp(2rem, 5vw, 4.5rem);
+      min-height: 90vh;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 3.5rem;
+      color: var(--gold);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-bottom: 1px solid var(--gold-soft);
+      padding-bottom: 0.25rem;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      font-size: 0.72rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.7rem, 6vw, 5.2rem);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      margin-bottom: 1.25rem;
+    }
+
+    .intro {
+      max-width: 760px;
+      color: var(--gray);
+      font-size: 1.05rem;
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.5rem;
+      border-top: 1px solid var(--gold-soft);
+      padding-top: 2.25rem;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    li {
+      border: 1px solid var(--gold-soft);
+      background: #fffdf9;
+      padding: 1.15rem 1.25rem;
+      color: var(--black);
+      font-size: 1rem;
+    }
+
+    .note {
+      color: var(--gray);
+      max-width: 720px;
+      margin-bottom: 2.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--black);
+      color: var(--white);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 1rem 1.5rem;
+      margin-right: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .btn.gold {
+      background: var(--gold);
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gold-soft);
+      color: var(--gray);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 700px) {
+      body { padding: 1rem; }
+      ul { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Back to Stephie’s $40 for 40</a>
+
+    <p class="eyebrow">Organization 02</p>
+    <h1>Street Girls Aid</h1>
+
+    <p class="intro">
+      Stephie’s $40 for 40 will support in-kind donations based on their current needs.
+    </p>
+
+    <h2>Items we hope to purchase</h2>
+
+    <ul>
+      <li>Deep Freezer</li>
+      <li>Sewing Machine</li>
+      <li>Wooden Children's Table for the Daycare</li>
+    </ul>
+
+    <p class="note">
+      Gifts will be used to purchase requested items and deliver them in person.
+    </p>
+
+    <a class="btn gold" href="index.html#how-to-give">Give $40</a>
+    <a class="btn" href="index.html">Back to main page</a>
+
+    <footer>
+      Stephie’s $40 for 40 · In-kind donations delivered in person · June 2026
+    </footer>
+  </main>
+</body>
+</html>
