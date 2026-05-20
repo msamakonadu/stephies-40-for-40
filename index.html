@@ -841,5 +841,19 @@
     Questions? <a href="mailto:stephies40for40@gmail.com">stephies40for40@gmail.com</a><br>
     Coordinated by Ama · All gifts become in-kind donations.
   </footer>
+<script>
+  fetch('https://script.google.com/macros/s/AKfycbzq8_tXMlb6y9BLzFMsBEPPS-RkPgC7f_jm5gqsGU9mPzRlu82mgV2hj2FgNmTIdbpStg/exec')
+    .then(r => r.json())
+    .then(data => {
+      if (data.total > 0) {
+        document.getElementById('raised').textContent =
+          data.total.toLocaleString('en-US', {
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0
+          });
+      }
+    })
+    .catch(() => {});
+</script>
 </body>
 </html>
