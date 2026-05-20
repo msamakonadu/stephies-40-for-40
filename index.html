@@ -430,6 +430,18 @@
       text-transform: uppercase;
     }
 
+    .card-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin: 1.5rem 0 1.25rem;
+}
+
+.card .tag {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
     .steps {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -667,26 +679,44 @@
         </div>
 
         <div class="grid-two">
-          <article class="card">
-            <p class="num">01</p>
-            <h3>Motherly Love Foundation</h3>
-            <p>A home and care space for children living with HIV/AIDS.</p>
-            <a href="https://www.motherlylovefoundation.org/" target="_blank" rel="noopener" class="text-link">Visit site</a><br>
-            <a href="motherly-love.html" class="cause-link">See what they need →</a>
-            <span class="tag">$40 per donor</span>
-          </article>
 
-          <article class="card">
-            <p class="num">02</p>
-            <h3>Street Girls Aid</h3>
-            <p>A Ghanaian NGO supporting street-connected girls and at-risk children through shelter, outreach, training, and education.</p>
-            <a href="https://sgaghana.org/" target="_blank" rel="noopener" class="text-link">Visit site</a><br>
-            <a href="street-girls-aid.html" class="cause-link">
-  See what they need →
-</a>
-            <span class="tag">$40 per donor</span>
-          </article>
-        </div>
+  <article class="card">
+    <p class="num">01</p>
+    <h3>Motherly Love Foundation</h3>
+    <p>A home and care space for children living with HIV/AIDS.</p>
+
+    <div class="card-links">
+      <a href="https://www.motherlylovefoundation.org/" target="_blank" rel="noopener" class="text-link">
+        Visit site
+      </a>
+
+      <a href="motherly-love.html" class="text-link">
+        See what they need
+      </a>
+    </div>
+
+    <span class="tag">$40 per donor</span>
+  </article>
+
+  <article class="card">
+    <p class="num">02</p>
+    <h3>Street Girls Aid</h3>
+    <p>A Ghanaian NGO supporting street-connected girls and at-risk children through shelter, outreach, training, and education.</p>
+
+    <div class="card-links">
+      <a href="https://sgaghana.org/" target="_blank" rel="noopener" class="text-link">
+        Visit site
+      </a>
+
+      <a href="street-girls-aid.html" class="text-link">
+        See what they need
+      </a>
+    </div>
+
+    <span class="tag">$40 per donor</span>
+  </article>
+
+</div>
       </div>
     </section>
 
